@@ -82,7 +82,6 @@ img{
 .header{
     min-height: 60rem;
     background-image: url(/08-arquitectura/img/hero.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 5rem 0;
@@ -148,7 +147,6 @@ img{
     width: 4rem;
     height: 4rem;
     background-image: url(/08-arquitectura/img/telefono.png);
-    background-repeat: no-repeat;
     background-position: center center;
     margin-right: 1rem;
 }
@@ -214,7 +212,6 @@ img{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background-image: url(/08-arquitectura/img/nosotros.jpg);
-    background-repeat: no-repeat;
     background-position: bottom center;
 }
 
@@ -242,4 +239,64 @@ img{
 .contenido-nosotros p, 
 .contenido-nosotros h2{
     margin-bottom: 1rem;
+}
+
+/** Modelos **/
+
+.modelo{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+@media (min-width: 768px) {
+    .modelo{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 5rem;
+    } 
+    
+}
+
+.contenido-modelo{
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.basico{
+    background-image: url(/08-arquitectura/img/modelo_basico.jpg);
+}
+
+@media (min-width: 768px) {
+    .basico{
+        background-position: top right;
+    } 
+    .basico .contenido-modelo{
+        grid-row: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
+}
+.premier{
+    background-image: url(/08-arquitectura/img/modelo_premier.jpg);
+}
+
+@media (min-width: 768px) { 
+    .premier{
+        background-position: top left;
+    } 
+    .premier .contenido-modelo{
+        grid-column: 2 / 3;
+        padding: 2rem 0rem 2rem 2rem;
+    } 
+}
+.elite{
+    background-image: url(/08-arquitectura/img/modelo_elite.jpg);
+}
+
+@media (min-width: 768px) { 
+    .elite{
+        background-position: top right;
+    } 
+    .elite .contenido-modelo{
+        padding: 2rem 2rem 2rem 0;
+    } 
 }
