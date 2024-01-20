@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header id="inicio" class="header">
         <div class="contenedor contenido-header">
             <div class="barra">
                 <div class="logo">
@@ -20,11 +20,10 @@
                 <div class="contacto">
                     <a class="telefono" href="tel:01-800-0000-0000">01-800-0000-0000</a>
                     <nav class="navegacion">
-                        <a class="link" href="#">Inicio</a>
-                        <a class="link" href="#">Nosotros</a>
-                        <a class="link" href="#">Modelos</a>
-                        <a class="link" href="#">Galería</a>
-                        <a class="link" href="#">Contacto</a>
+                        <a class="link" href="#inicio">Inicio</a>
+                        <a class="link" href="#nosotros">Nosotros</a>
+                        <a class="link" href="#modelos">Modelos</a>
+                        <a class="link" href="#galeria">Galería</a>
                     </nav>
                 </div>
             </div>
@@ -35,7 +34,7 @@
         </div>
     </header>
 
-    <section class="contenedor mt-5 nosotros">
+    <section id="nosotros" class="contenedor mt-5 nosotros">
         <div class="contenido-nosotros">
             <h2>Sobre Nosotros</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque iure illo ex velit dolores eos maxime neque. Necessitatibus soluta, aliquam voluptas dicta, sed aperiam cumque, nobis officiis eos itaque accusamus!</p>
@@ -43,7 +42,7 @@
         </div>
     </section>
 
-    <main class="contenedor mt-5">
+    <main id="modelos" class="contenedor mt-5">
         <h2>Conoce nuestros 3 modelos</h2>
         <div class="modelo basico">
             <div class="contenido-modelo">
@@ -70,7 +69,7 @@
         </div> <!--Finaliza el modelo --> 
     </main>
 
-    <section class="contenedor mt-5">
+    <section id="galeria" class="contenedor mt-5">
         <h2>Galería</h2>
         <div class="galeria">
             <div class="imagen">
@@ -101,7 +100,26 @@
                 <img src="/08-arquitectura/img/imagen_7.jpg" alt="Imagen Galeria 7">
             </div>
         </div>
-
     </section>
+
+    <footer class="footer mt-5">
+        <div class="contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <h1 class="nombre-sitio">Arquitectura<span>Bosque</span></h1>
+                </div>
+                <div class="contacto">
+                    <a class="telefono" href="tel:01-800-000-000">01-800-000-000</a>
+                    <nav class="navegacion">
+                        <a class="link" href="#inicio">Inicio</a>
+                        <a class="link" href="#nosotros">Nosotros</a>
+                        <a class="link" href="#modelos">Modelos</a>
+                        <a class="link" href="#galeria">Galería</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <p class="copyright text-center">Todos los derechos reservados  &copy; </p>
+    </footer>
 </body>
 </html>

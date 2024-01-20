@@ -160,7 +160,7 @@ img{
     margin-top: 1rem;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 1100px) { 
     .navegacion{
         flex-direction: row;
     }
@@ -366,6 +366,32 @@ img{
         grid-column: 3 / 4;
     }
 }
+
+/** Footer **/
+
+.footer{
+    height: 50rem;
+    background-image: url(/08-arquitectura/img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--blanco);
+}
+.footer a{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.copyright{
+    background-color: var(--negro);
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
 
 
 
